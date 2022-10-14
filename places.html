@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My page</title>
+    <title>Alex Storozhuk</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,11 +25,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <style>
-      .round-img {
-        width: 60%;
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .card img {
         border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        padding: 0.6em;
+        width: 60%;
+        margin: auto;
       }
     </style>
   </head>
@@ -58,37 +65,54 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="places.html">Faforite places</a>
+              <a class="nav-link active" href="places.html">Faforite places</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="col-lg-8 col-md-12 col-sm-8 mx-auto">
-          <h1 class="fw-light">Alex Storozhuk</h1>
-          <h2 class="fw-light">Photo of</h2>
-          <img class="round-img" src="Photo.png" alt="Missing photo" />
-          <h1 class="fw-light">Portfolio</h1>
-          <p class="lead text-muted">
-            Ukrainian; Age : 27; City of living : Vinnitsa; Want to learn
-            Front-end development. First site by course from Bogdan.
-          </p>
-          <a
-            href="https://www.instagram.com/lex_storozhuk"
-            target="_blank"
-            class="btn btn-dark"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://www.facebook.com/campaign/landing.php?campaign_id=1600506847&extra_1=s%7Cc%7C303881997266%7Ce%7Cfacebook%7C&placement&creative=303881997266&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D21109%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIhLmi26DW-gIVeQuiAx3BCAEVEAAYASAAEgJS0PD_BwE"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            facebook
-          </a>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="Burj Khalifa.jpg" class="card-img-top" alt="Myimg" />
+            <div class="card-body">
+              <h5 class="card-title">Burj Khalifa</h5>
+              <p class="card-text">
+                Burj Khalifa one of the famous places in UAE
+              </p>
+              <a
+                href="Burj Khalifa large.jpg"
+                target="_blank"
+                class="btn btn-dark"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Desert .jpg" class="card-img-top" alt="Myimg" />
+            <div class="card-body">
+              <h5 class="card-title">Desert</h5>
+              <p class="card-text">Desert in UAE</p>
+              <a href="Desert large.jpg" target="_blank" class="btn btn-dark"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="England.jpg" class="card-img-top" alt="Myimg" />
+            <div class="card-body">
+              <h5 class="card-title">England town</h5>
+              <p class="card-text">Small town in England</p>
+              <a href="England large.jpg" target="_blank" class="btn btn-dark"
+                >Large photo</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
